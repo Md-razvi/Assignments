@@ -3,40 +3,45 @@ package Day1;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        System.out.print("Enter the given two numbers and sign\n");
-        Scanner obj1 = new Scanner(System.in);
-        Scanner obj2= new Scanner(System.in);
-        Double num1,num2;
-        int a;
-        num1= obj1.nextDouble();
-        num2= obj1.nextDouble();
-        //a=obj2.nex
-        System.out.println("Enter the your choice");
-        System.out.println("1. Add");
-        System.out.println("2. Subtract");
-        System.out.println("3. Multiply");
-        System.out.println("4. Divide");
-        a=obj2.nextInt();
-        switch(a){
-            case 1:
-                System.out.println("The value is "+(num1+num2));
-                break;
-            case 2:
-                System.out.println("The value is "+(num1-num2));
-                break;
-            case 3:
-                System.out.println("The value is "+(num1*num2));
-                break;
-            case 4:
-                System.out.println("The value is "+(num1/num2));
-                break;
-            default:
-                System.out.println("Please give a correct choice ");
-                break;
+        // How to create a class, object, method and its signature?
+// Ans) A class in Java is a blue print for creating objects. IT defines properties and behavious of Object
+// we can simply create a class as shown below by adding a class keyword and a class name as shown below
+//Objects are instances of a class that allow us to access its properties and methods.
+//Example1 shows how objects are created
+//Methods are set  of instruction that perform a particular task when they are called by a programmer . The concept of method is based on reusability and DRY(Dont repeat yourself)
+//Each method has a signature that is its type and arguments (values in the bracket). based on arguments we can also  use method with same name but multiple ways (Method Overloading)
+//See Example 2 Where method Add of type int has been created
+//Main Class
+                //Example 1
+                Vehicle obj1=new Vehicle("Activa",2);
+                Vehicle obj2=new  Vehicle("Toyota",4);
+                obj1.DisplayVehicleDetails();
+                obj2.DisplayVehicleDetails();
+                int result=obj1.Add(12, 15);
+                System.out.println("The result is "+result);
+            }
+        }
+        class Vehicle{
+            //Properties of a class
+            String brand;
+            int wheel;
+            //Assigning values to the properties
+            public Vehicle(String brand,int wheel) {
+                this.brand=brand;
+                this.wheel=wheel;
+            }
+            //Example 2
+            public int Add(int a,int b){
+                return a+b;
 
+            }
+            //displaying the values
+            public void  DisplayVehicleDetails(){
+                System.out.println("This vehicle is a "+this.wheel+" wheeler of company "+this.brand);
+            }
         }
 
 
 
-    }
-}
+
+
