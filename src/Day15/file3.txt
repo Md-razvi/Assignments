@@ -1,0 +1,5 @@
+This file is for Buffered (read type)
+Please read the following instructions
+1. We are learning Java LAnguage here
+2 .We will also learn Other technologies
+3. This is also a practice

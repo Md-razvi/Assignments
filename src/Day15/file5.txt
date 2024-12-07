@@ -1,0 +1,5 @@
+This  txt file that is being read by usage of FileReader.
+1. The is Java Peactice .
+2. The file is situated in Package Day15.
+3. The file has been read by IOClass5.
+4. Next we will learn.

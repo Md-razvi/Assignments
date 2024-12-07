@@ -1,0 +1,4 @@
+#This is a sample properties file
+Name=Mohammed Mudabir Raza
+Id.no=23
+College=Nawab Shah Alam Khan  College
